@@ -38,9 +38,9 @@ const analysisSchema = new Schema<IAnalysis>(
     bundleSize: { type: Number, required: true },
     apiResponseTime: { type: Number, required: true },
     requestCount: { type: Number, required: true },
-    apiMetrics: { type: [Schema.Types.Mixed], default: [] },
-    assets: { type: [Schema.Types.Mixed], default: [] },
-    recommendations: { type: [Schema.Types.Mixed], default: [] }
+    apiMetrics: { type: [Schema.Types.Mixed]as any, default: [] },
+    assets: { type: [Schema.Types.Mixed]as any, default: [] },
+    recommendations: { type: [Schema.Types.Mixed]as any, default: [] }
   },
   { timestamps: true }
 );
